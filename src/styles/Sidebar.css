@@ -1,0 +1,16 @@
+.sidebar{
+    margin-top: 0.2rem;
+    background-color: white;
+    height:95vh ;
+}
+.sidebar ul{
+    display: flex;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
+}
+.sidebar li{
+    padding: 1rem 1rem;
+
+}
