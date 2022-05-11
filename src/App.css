@@ -1,5 +1,6 @@
 .app{
     background-color: white;
+    margin: .5rem;
 }
 .container{
     display: flex;
@@ -7,14 +8,11 @@
     align-items: center;
 }
 .container div:nth-child(1){
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    flex:1;
+    flex:1;
 }
 .container div:nth-child(2){
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     flex:3;
 }
 .container div:nth-child(3){
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     flex:2;
-    background: red;
 }

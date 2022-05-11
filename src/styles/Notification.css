@@ -1,0 +1,20 @@
+.notify-bar{
+    width: 100%;
+    margin: 0.5rem 0;    
+    height:90vh ;  
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;    
+ 
+
+
+}
+.notify-bar div:nth-child(1){
+    height: 50%;
+    padding:1rem  .5rem;
+
+}
+.notify-bar div:nth-child(2){
+    height: 50%;
+    padding:1rem  .5rem;
+
+
+}

@@ -1,16 +1,60 @@
 .sidebar{
-    margin-top: 0.2rem;
+    margin: 0.5rem 0;
     background-color: white;
-    height:95vh ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;    
+    color: #8d99ae;
+
+
+    height:90vh ;
 }
 .sidebar ul{
     display: flex;
-    height: 40px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 40px;   
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px;       
+      padding: .5rem 0rem;
+
+
 
 
 }
 .sidebar li{
-    padding: 1rem 1rem;
+    padding: .25rem 1rem;
+
+    
+}
+.chat-heading{
+    display: flex;
+    padding: .5rem .5rem;
+    color: black;
+
+
+}
+.chat-heading h4{
+    
+    font-size: 1rem;
+    flex:1;
+}
+.chat-heading p{
+    background-image:linear-gradient(#7f7fd5,#86a8e7,#91eae4) ;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: .2rem .1rem;
+
+display: grid;
+place-items: center;
+    flex: 0.1;
+}
+ .chat-header{
+    display: flex;
+    justify-content:flex-start ;
+    padding: .5rem .2rem;
+    color: black;
+    font-size: .5rem;
+    background-color: transparent;
+
+
+}
+.chat-header p{
+    padding: .0rem .1rem;
 
 }
