@@ -1,21 +1,28 @@
 import './App.css';
-import Header from "./components/Header.js";
-import Sidebar from './components/Sidebar';
-import Chat from './components/Chat';
-import Notification from './components/Notification';
+import "./pages/Home";
 
 function App() {
   return (
     <div className="app">
-<Header/>
-<div className='container'>
-<div><Sidebar/></div>
-<div><Chat/></div>
+      <div className='app-layout'>
+<h1>Chatty</h1>
+<form>
+    <ul className='form-heading'>
+      <li>
+        <a href="/" className='active'>SIGN IN</a></li>
+      <li><a href="/">SIGN OUT</a></li>
 
-<div><Notification/></div>
+    </ul>
 
+  
+  <div className='input-group'>
+  <input type="text" placeholder='Username'/>
+  <input type="password" placeholder='Password'/>
+<button >Submit</button>
 </div>
-      </div>
+</form>
+</div>
+</div>
   );
 }
 
