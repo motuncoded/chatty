@@ -1,0 +1,82 @@
+.sign{
+    display: flex;
+    justify-content: center;
+  
+    }
+    .app-layout{
+
+        position: absolute;
+        top: 10%;
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        border-radius: 2px;
+
+    }
+    .app-layout > h3{
+        padding-top: 5rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-align: center;
+    }
+    form{
+    margin-top: 2rem;   
+    
+    }.form-heading{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .form-heading li{
+        padding: 2rem 2rem;
+    }
+    .form-heading li a{
+        color: #8d99ae;
+    font-weight: 200;
+    }
+    .active{
+        padding-bottom: .25rem;
+        border-bottom: 2px solid aqua;
+    }
+    a:hover{
+        padding-bottom: .25rem;
+        border-bottom: 2px solid aqua;
+    
+    }
+    
+    .input-group{
+        margin:0 1.5rem;   
+         display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    input{
+        margin: 1rem;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: #dbdbdb;
+    padding: 1rem;
+        width: 100%;
+    }
+    
+    button{ margin: 1rem;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        color: gray;
+    
+        background-color: aqua;
+        width: 100%;
+    }
+    button:hover{
+        border: 1px solid aqua;
+        background-color: whitesmoke;
+        color: #000;
+    }
+    

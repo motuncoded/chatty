@@ -1,28 +1,35 @@
+import { BrowserRouter, Route, Routes, } from 'react-router-dom';
+import { createContext, useState } from 'react';
 import './App.css';
 import "./pages/Home";
+import Home from './pages/Home';
+import SignUp from './pages/SignIn';
+
+
+
+
+
+export const ThemeContext = createContext(null)
 
 function App() {
+const[theme, setTheme] = useState("light")
+ const toggleTheme =() =>{
+   setTheme((color) => color ==="light"? "dark" :"light")
+ } 
+    
+
   return (
-    <div className="app">
-      <div className='app-layout'>
-<h1>Chatty</h1>
-<form>
-    <ul className='form-heading'>
-      <li>
-        <a href="/" className='active'>SIGN IN</a></li>
-      <li><a href="/">SIGN OUT</a></li>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+    <div className="app"  id="light">
+      <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='signup' element={<SignUp/>}/>
 
-    </ul>
-
-  
-  <div className='input-group'>
-  <input type="text" placeholder='Username'/>
-  <input type="password" placeholder='Password'/>
-<button >Submit</button>
+    </Routes>
+     </BrowserRouter>   
 </div>
-</form>
-</div>
-</div>
+</ThemeContext.Provider>
   );
 }
 

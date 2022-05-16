@@ -1,0 +1,22 @@
+.navbar{
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar li{
+    margin:0 4rem;
+}
+.navbar li >button{
+    background-color: aqua;
+    color: black;
+}
+.landing{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.landing>div{
+    width: 50%;
+}
