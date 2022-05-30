@@ -1,35 +1,38 @@
-import { BrowserRouter, Route, Routes, } from 'react-router-dom';
-import { createContext, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import "./pages/Home";
+
 import Home from './pages/Home';
-import SignUp from './pages/SignIn';
+import Register from './pages/Register';
 
+import SignIn from "./pages/SignIn"
+import Dashboard from "./pages/Dashboard"
 
+import ErrorPage from "./pages/ErrorPage"
 
+import "./styles/Header.css"
 
-
-export const ThemeContext = createContext(null)
 
 function App() {
-const[theme, setTheme] = useState("light")
- const toggleTheme =() =>{
-   setTheme((color) => color ==="light"? "dark" :"light")
- } 
-    
+ 
+  
 
   return (
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
-    <div className="app"  id="light">
+    <div className="app" >
+
       <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='signup' element={<SignUp/>}/>
+      <Route path='signin' element={<SignIn/>}/>
+      <Route path='register' element={<Register/>}/>
+      <Route path='dashboard' element={<Dashboard/>}/>
+
+      <Route path='*' element={<ErrorPage/>}/>
+
+
 
     </Routes>
      </BrowserRouter>   
 </div>
-</ThemeContext.Provider>
   );
 }
 

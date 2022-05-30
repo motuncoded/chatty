@@ -1,22 +1,41 @@
-.navbar{
-    background-color: white;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar li{
-    margin:0 4rem;
-}
-.navbar li >button{
-    background-color: aqua;
-    color: black;
+.home{
+    width: 100%;
+    font-family: inherit;
 }
 .landing{
-    display: flex;
-justify-content: center;
-align-items: center;
+ display: flex;
+ padding: 4rem;
 }
-.landing>div{
+.left{
     width: 50%;
+}.right{
+    width: 50%;
+}
+.connect{
+    font-size: 3.5rem;
+    font-weight: 200;
+    padding: 1rem;
+}
+.connect-paragraph{
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding:0rem 1rem;
+}
+.btn{     
+margin: .5rem 0;
+    padding: 1rem 1rem;
+
+}
+.get-started{
+     padding: 1rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        color: var(--text-primary);
+    
+        background-color: var(--text-secondary);
+    
+}
+.get-started:hover{
+    background-color: bisque;
 }

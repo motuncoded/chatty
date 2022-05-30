@@ -1,12 +1,21 @@
 .header{
     font-family: inherit;
-    height: 2rem;
     color: black;
-    margin-top: .2rem;
     width: 100%;
     padding: .5rem .5rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
-.header h1{
-    font-size: 1rem;
-    letter-spacing: 2px;
+}
+.chatty{
+    border-radius:50% ;
+    background-color: bisque;
+    padding: 1rem;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatty h1{
+    font-weight: 200;
+    font-size: 2rem;
 }

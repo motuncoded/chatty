@@ -1,5 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+:root{
+  --background:#fff;
+  --text-primary:#000;
+  --text-secondary:#00b4d8;
+
+
+}
+[data-theme="dark"]{
+  --background:#000;
+  --text-primary:#fff;
+  --text-secondary:#2cced2;
+
+
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -17,7 +32,7 @@ li{
 a{
   text-decoration: none;
 }
-a:visited{
+a:link{
   color: black;
 }
 
